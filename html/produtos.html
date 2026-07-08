@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Analytics (substitua GA_MEASUREMENT_ID pelo ID real da loja) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- Meta Pixel (substitua META_PIXEL_ID pelo ID real da loja) -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'META_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+    <title>Produtos - Mussumba Store</title>
+    <meta name="description" content="Catálogo da Mussumba Store organizado por Homem, Mulher e Crianças: roupa, sapatilhas, ténis, óculos de sol, mochilas e malas — com as tendências de moda de 2026.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/interativo.css">
+    <link rel="canonical" href="https://www.mussumbastore.co.ao/html/produtos.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Produtos - Mussumba Store">
+    <meta property="og:description" content="Catálogo da Mussumba Store organizado por Homem, Mulher e Crianças: roupa, sapatilhas, ténis, óculos de sol, mochilas e malas — com as tendências de moda de 2026.">
+    <meta property="og:url" content="https://www.mussumbastore.co.ao/html/produtos.html">
+    <meta property="og:locale" content="pt_AO">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+    <div class="top-bar">
+        Entrega em toda Angola | Compra simples e segura
+    </div>
+
+    <header class="main-header">
+        <a href="../index.html" class="logo">
+            MUSSUMBA STORE
+            <span>moda com essência</span>
+        </a>
+
+        <form class="search-bar" id="searchForm" role="search" novalidate>
+            <input type="search" id="searchInput" name="q" placeholder="Pesquisar produto" minlength="2">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html" class="active">Produtos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <a class="cart-link" href="carrinho.html">
+            Carrinho <span class="cart-count" id="cartCount">0</span>
+        </a>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro" title="Alternar modo escuro">
+            <span class="theme-icon" aria-hidden="true">&#127769;</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Produtos</h1>
+                <p>Escolha peças que combinam presença, conforto e identidade — para toda a família.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Catálogo</h2>
+            <p class="section-lead">
+                Produtos organizados por categoria, tal como numa loja física: Homem, Mulher e Crianças.
+                Catálogo com fotos reais das peças da Mussumba Store: hoodies, cargo, ganga wide-leg, vestidos,
+                pijamas, sapatilhas, mocassins e mochilas.
+            </p>
+
+            <nav class="category-nav" aria-label="Categorias de produtos">
+                <a href="#homem">Homem</a>
+                <a href="#mulher">Mulher</a>
+                <a href="#criancas">Crianças</a>
+            </nav>
+
+            <!-- ===================== HOMEM ===================== -->
+            <div class="category-block" id="homem">
+                <div class="category-block-header">
+                    <h3>Homem</h3>
+                    <span>8 produtos</span>
+                </div>
+
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/homem-hoodie-oversized.jpg" alt="Hoodie oversized preto masculino" loading="lazy">
+                        <div>
+                            <h3>Hoodie Oversized Preto</h3>
+                            <p>Corte solto, algodão macio e capuz forrado — a silhueta streetwear que domina 2026.</p>
+                            <strong>Kz 24.990</strong>
+                            <button type="button" class="btn-cart" data-id="hoodie-oversized-preto" data-name="Hoodie Oversized Preto" data-price="24990" data-img="../imagens/produtos/novas/homem-hoodie-oversized.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/homem-camisola-capuz-riscas.jpg" alt="Camisola com capuz às riscas masculina" loading="lazy">
+                        <div>
+                            <h3>Camisola com Capuz Riscas</h3>
+                            <p>Padrão às riscas com capuz forrado, ideal para o dia a dia com um toque desportivo.</p>
+                            <strong>Kz 21.990</strong>
+                            <button type="button" class="btn-cart" data-id="camisola-com-capuz-riscas" data-name="Camisola com Capuz Riscas" data-price="21990" data-img="../imagens/produtos/novas/homem-camisola-capuz-riscas.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/homem-calcas-cargo.jpg" alt="Calças cargo bege masculinas" loading="lazy">
+                        <div>
+                            <h3>Calças Cargo Utility</h3>
+                            <p>Corte reto com bolsos funcionais — o cargo continua a ser a grande tendência de 2026.</p>
+                            <strong>Kz 26.990</strong>
+                            <button type="button" class="btn-cart" data-id="calcas-cargo-utility" data-name="Calças Cargo Utility" data-price="26990" data-img="../imagens/produtos/novas/homem-calcas-cargo.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/homem-sandalia-cruzada.jpg" alt="Sandálias cruzadas em pele castanha" loading="lazy">
+                        <div>
+                            <h3>Sandálias Cruzadas</h3>
+                            <p>Tiras cruzadas em pele com base em cortiça, confortáveis para o calor angolano.</p>
+                            <strong>Kz 18.990</strong>
+                            <button type="button" class="btn-cart" data-id="sandalias-cruzadas" data-name="Sandálias Cruzadas" data-price="18990" data-img="../imagens/produtos/novas/homem-sandalia-cruzada.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/homem-mocassim-pele.jpg" alt="Mocassim clássico em pele preta" loading="lazy">
+                        <div>
+                            <h3>Mocassim Clássico em Pele</h3>
+                            <p>Acabamento polido, ideal para o escritório ou para elevar um look casual.</p>
+                            <strong>Kz 39.990</strong>
+                            <button type="button" class="btn-cart" data-id="mocassim-classico-em-pele" data-name="Mocassim Clássico em Pele" data-price="39990" data-img="../imagens/produtos/novas/homem-mocassim-pele.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/homem-crocs.jpg" alt="Crocs preto masculino" loading="lazy">
+                        <div>
+                            <h3>Chinelos Crocs</h3>
+                            <p>Leves, confortáveis e fáceis de limpar — o clássico que nunca sai de moda.</p>
+                            <strong>Kz 16.990</strong>
+                            <button type="button" class="btn-cart" data-id="chinelos-crocs" data-name="Chinelos Crocs" data-price="16990" data-img="../imagens/produtos/novas/homem-crocs.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/homem-mochila-portatil.jpg" alt="Mochila para portátil preta" loading="lazy">
+                        <div>
+                            <h3>Mochila para Portátil</h3>
+                            <p>Compartimentos organizados e espaço acolchoado para o portátil — feita para o dia a dia.</p>
+                            <strong>Kz 28.990</strong>
+                            <button type="button" class="btn-cart" data-id="mochila-para-portatil" data-name="Mochila para Portátil" data-price="28990" data-img="../imagens/produtos/novas/homem-mochila-portatil.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/homem-pasta-executiva.jpg" alt="Pasta executiva em pele preta" loading="lazy">
+                        <div>
+                            <h3>Pasta Executiva</h3>
+                            <p>Estrutura rígida em pele sintética, ideal para levar documentos e portátil ao trabalho.</p>
+                            <strong>Kz 25.990</strong>
+                            <button type="button" class="btn-cart" data-id="pasta-executiva" data-name="Pasta Executiva" data-price="25990" data-img="../imagens/produtos/novas/homem-pasta-executiva.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- ===================== MULHER ===================== -->
+            <div class="category-block" id="mulher">
+                <div class="category-block-header">
+                    <h3>Mulher</h3>
+                    <span>21 produtos</span>
+                </div>
+
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-vestido-longo-amarelo.jpg" alt="Vestido longo amarelo feminino" loading="lazy">
+                        <div>
+                            <h3>Vestido Longo Amarelo</h3>
+                            <p>Decote em V, cintura marcada e caimento fluido — perfeito para ocasiões especiais.</p>
+                            <strong>Kz 38.990</strong>
+                            <button type="button" class="btn-cart" data-id="vestido-longo-amarelo" data-name="Vestido Longo Amarelo" data-price="38990" data-img="../imagens/produtos/novas/mulher-vestido-longo-amarelo.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-vestido-longo-verde.jpg" alt="Vestido longo verde feminino" loading="lazy">
+                        <div>
+                            <h3>Vestido Longo Verde</h3>
+                            <p>Alças finas e saia em camadas, ideal para praia, festas ou viagens.</p>
+                            <strong>Kz 36.990</strong>
+                            <button type="button" class="btn-cart" data-id="vestido-longo-verde" data-name="Vestido Longo Verde" data-price="36990" data-img="../imagens/produtos/novas/mulher-vestido-longo-verde.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-calcas-jeans-clara.jpg" alt="Calças de ganga wide-leg claras" loading="lazy">
+                        <div>
+                            <h3>Jeans Wide-Leg Claro</h3>
+                            <p>Corte largo e cintura alta — o denim que domina 2026.</p>
+                            <strong>Kz 27.990</strong>
+                            <button type="button" class="btn-cart" data-id="jeans-wide-leg-claro" data-name="Jeans Wide-Leg Claro" data-price="27990" data-img="../imagens/produtos/novas/mulher-calcas-jeans-clara.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-calcas-jeans-escura.jpg" alt="Calças de ganga wide-leg escuras" loading="lazy">
+                        <div>
+                            <h3>Jeans Wide-Leg Escuro</h3>
+                            <p>Lavagem média, corte reto e largo, fácil de combinar com sapatilha ou salto.</p>
+                            <strong>Kz 27.990</strong>
+                            <button type="button" class="btn-cart" data-id="jeans-wide-leg-escuro" data-name="Jeans Wide-Leg Escuro" data-price="27990" data-img="../imagens/produtos/novas/mulher-calcas-jeans-escura.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-robe-cetim.jpg" alt="Robe de cetim rosa feminino" loading="lazy">
+                        <div>
+                            <h3>Robe de Cetim</h3>
+                            <p>Toque acetinado e caimento leve, com cinto para ajustar à cintura.</p>
+                            <strong>Kz 17.990</strong>
+                            <button type="button" class="btn-cart" data-id="robe-de-cetim" data-name="Robe de Cetim" data-price="17990" data-img="../imagens/produtos/novas/mulher-robe-cetim.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-pijama-cetim.jpg" alt="Conjunto de pijama de cetim" loading="lazy">
+                        <div>
+                            <h3>Pijama de Cetim 2 Peças</h3>
+                            <p>Camisa e calção em cetim macio, com debrum contrastante.</p>
+                            <strong>Kz 19.990</strong>
+                            <button type="button" class="btn-cart" data-id="pijama-de-cetim-2-pecas" data-name="Pijama de Cetim 2 Peças" data-price="19990" data-img="../imagens/produtos/novas/mulher-pijama-cetim.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-sapatilha-bege-rosegold.jpg" alt="Sapatilha bege com detalhe rosé feminina" loading="lazy">
+                        <div>
+                            <h3>Sapatilha Bege Rosé</h3>
+                            <p>Detalhe metalizado na biqueira e fecho de correr lateral — um toque de sofisticação.</p>
+                            <strong>Kz 33.990</strong>
+                            <button type="button" class="btn-cart" data-id="sapatilha-bege-rose" data-name="Sapatilha Bege Rosé" data-price="33990" data-img="../imagens/produtos/novas/mulher-sapatilha-bege-rosegold.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-sapatilha-laco-castanha.jpg" alt="Sapatilha castanha com laço feminina" loading="lazy">
+                        <div>
+                            <h3>Sapatilha com Laço</h3>
+                            <p>Detalhe de laço em pele sobre base branca, confortável para o dia a dia.</p>
+                            <strong>Kz 24.990</strong>
+                            <button type="button" class="btn-cart" data-id="sapatilha-com-laco" data-name="Sapatilha com Laço" data-price="24990" data-img="../imagens/produtos/novas/mulher-sapatilha-laco-castanha.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-sapatilha-branca.jpg" alt="Sapatilha branca desportiva feminina" loading="lazy">
+                        <div>
+                            <h3>Sapatilha Desportiva Branca</h3>
+                            <p>Estilo retro-runner, leve e versátil para combinar com jeans ou calções.</p>
+                            <strong>Kz 32.990</strong>
+                            <button type="button" class="btn-cart" data-id="sapatilha-desportiva-branca" data-name="Sapatilha Desportiva Branca" data-price="32990" data-img="../imagens/produtos/novas/mulher-sapatilha-branca.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-vestido-branco.jpg" alt="Vestido branco justo feminino" loading="lazy">
+                        <div>
+                            <h3>Vestido Curto Branco</h3>
+                            <p>Modelagem justa com efeito drapeado e recortes em malha transparente — ideal para a noite.</p>
+                            <strong>Kz 25.990</strong>
+                            <button type="button" class="btn-cart" data-id="vestido-curto-branco" data-name="Vestido Curto Branco" data-price="25990" data-img="../imagens/produtos/novas/mulher-vestido-branco.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-macacao-branco.jpg" alt="Macacão branco largo feminino" loading="lazy">
+                        <div>
+                            <h3>Macacão Branco Wide-Leg</h3>
+                            <p>Costas nuas com laço, perna larga e caimento fluido — para looks de festa.</p>
+                            <strong>Kz 34.990</strong>
+                            <button type="button" class="btn-cart" data-id="macacao-branco-wide-leg" data-name="Macacão Branco Wide-Leg" data-price="34990" data-img="../imagens/produtos/novas/mulher-macacao-branco.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-macacao-preto.jpg" alt="Macacão preto largo feminino" loading="lazy">
+                        <div>
+                            <h3>Macacão Preto Wide-Leg</h3>
+                            <p>Mesma modelagem elegante em preto, versátil para eventos e saídas noturnas.</p>
+                            <strong>Kz 34.990</strong>
+                            <button type="button" class="btn-cart" data-id="macacao-preto-wide-leg" data-name="Macacão Preto Wide-Leg" data-price="34990" data-img="../imagens/produtos/novas/mulher-macacao-preto.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-macacao-vermelho.jpg" alt="Macacão vermelho largo feminino" loading="lazy">
+                        <div>
+                            <h3>Macacão Vermelho Wide-Leg</h3>
+                            <p>Cor statement para quem quer destacar-se — mesmo corte alças finas e perna larga.</p>
+                            <strong>Kz 34.990</strong>
+                            <button type="button" class="btn-cart" data-id="macacao-vermelho-wide-leg" data-name="Macacão Vermelho Wide-Leg" data-price="34990" data-img="../imagens/produtos/novas/mulher-macacao-vermelho.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-calcas-alfaiataria.jpg" alt="Calças de alfaiataria pregas femininas" loading="lazy">
+                        <div>
+                            <h3>Calças Alfaiataria com Pregas</h3>
+                            <p>Cintura alta com pregas frontais e caimento wide-leg — disponíveis em preto e azul.</p>
+                            <strong>Kz 23.990</strong>
+                            <button type="button" class="btn-cart" data-id="calcas-alfaiataria-com-pregas" data-name="Calças Alfaiataria com Pregas" data-price="23990" data-img="../imagens/produtos/novas/mulher-calcas-alfaiataria.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-bodysuit-capa.jpg" alt="Body castanho com capa feminino" loading="lazy">
+                        <div>
+                            <h3>Body com Capa</h3>
+                            <p>Peça statement com capa drapeada nos ombros — para uma entrada memorável.</p>
+                            <strong>Kz 29.990</strong>
+                            <button type="button" class="btn-cart" data-id="body-com-capa" data-name="Body com Capa" data-price="29990" data-img="../imagens/produtos/novas/mulher-bodysuit-capa.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-mala-tote-bege-monograma.jpg" alt="Mala tote bege com monograma feminina" loading="lazy">
+                        <div>
+                            <h3>Tote Bag Monograma Bege</h3>
+                            <p>Espaçosa e estruturada, com alças em pele — perfeita para o dia a dia ou trabalho.</p>
+                            <strong>Kz 22.990</strong>
+                            <button type="button" class="btn-cart" data-id="tote-bag-monograma-bege" data-name="Tote Bag Monograma Bege" data-price="22990" data-img="../imagens/produtos/novas/mulher-mala-tote-bege-monograma.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-mala-tote-preta-floral.jpg" alt="Mala tote preta com padrão e bolsa extra feminina" loading="lazy">
+                        <div>
+                            <h3>Tote Bag Preta com Bolsa Extra</h3>
+                            <p>Vem com bolsa interior amovível — 2 malas em 1, ideal para organizar o essencial.</p>
+                            <strong>Kz 23.990</strong>
+                            <button type="button" class="btn-cart" data-id="tote-bag-preta-com-bolsa-extra" data-name="Tote Bag Preta com Bolsa Extra" data-price="23990" data-img="../imagens/produtos/novas/mulher-mala-tote-preta-floral.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-mala-tote-xadrez.jpg" alt="Mala tote xadrez feminina" loading="lazy">
+                        <div>
+                            <h3>Tote Bag Xadrez</h3>
+                            <p>Padrão xadrez com alças em pele lisa — um clássico atualizado para 2026.</p>
+                            <strong>Kz 24.990</strong>
+                            <button type="button" class="btn-cart" data-id="tote-bag-xadrez" data-name="Tote Bag Xadrez" data-price="24990" data-img="../imagens/produtos/novas/mulher-mala-tote-xadrez.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-mala-tote-preta-r.jpg" alt="Mala tote preta com monograma feminina" loading="lazy">
+                        <div>
+                            <h3>Tote Bag Monograma Preta</h3>
+                            <p>Estampado geométrico discreto sobre pele preta, alças reforçadas.</p>
+                            <strong>Kz 22.990</strong>
+                            <button type="button" class="btn-cart" data-id="tote-bag-monograma-preta" data-name="Tote Bag Monograma Preta" data-price="22990" data-img="../imagens/produtos/novas/mulher-mala-tote-preta-r.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-mala-dj-preta.jpg" alt="Mala de mão preta estruturada feminina" loading="lazy">
+                        <div>
+                            <h3>Mala de Mão Estruturada Preta</h3>
+                            <p>Formato rígido com fecho de cadeado decorativo — elegância para o dia a dia.</p>
+                            <strong>Kz 27.990</strong>
+                            <button type="button" class="btn-cart" data-id="mala-de-mao-estruturada-preta" data-name="Mala de Mão Estruturada Preta" data-price="27990" data-img="../imagens/produtos/novas/mulher-mala-dj-preta.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/mulher-mala-dj-castanha.jpg" alt="Mala de mão castanha feminina" loading="lazy">
+                        <div>
+                            <h3>Mala de Mão Castanha</h3>
+                            <p>Tom castanho quente, ideal para complementar looks de outono.</p>
+                            <strong>Kz 27.990</strong>
+                            <button type="button" class="btn-cart" data-id="mala-de-mao-castanha" data-name="Mala de Mão Castanha" data-price="27990" data-img="../imagens/produtos/novas/mulher-mala-dj-castanha.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- ===================== CRIANÇAS ===================== -->
+            <div class="category-block" id="criancas">
+                <div class="category-block-header">
+                    <h3>Crianças</h3>
+                    <span>6 produtos</span>
+                </div>
+
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="../imagens/produtos/novas/crianca-chinelo-spiderman.jpg" alt="Chinelo infantil Spider-Man" loading="lazy">
+                        <div>
+                            <h3>Chinelo Spider-Man</h3>
+                            <p>Fivela ajustável e estampa divertida — para os mais pequenos brincarem à vontade.</p>
+                            <strong>Kz 6.990</strong>
+                            <button type="button" class="btn-cart" data-id="chinelo-spider-man" data-name="Chinelo Spider-Man" data-price="6990" data-img="../imagens/produtos/novas/crianca-chinelo-spiderman.jpg">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?fm=jpg&q=80&w=800&auto=format&fit=crop" alt="T-shirt infantil branca" loading="lazy">
+                        <div>
+                            <h3>T-Shirt Infantil Branca</h3>
+                            <p>Algodão macio e corte simples, fácil de combinar com qualquer calção ou calça.</p>
+                            <strong>Kz 7.990</strong>
+                            <button type="button" class="btn-cart" data-id="t-shirt-infantil-branca" data-name="T-Shirt Infantil Branca" data-price="7990" data-img="https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?fm=jpg&q=80&w=800&auto=format&fit=crop">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="https://images.unsplash.com/photo-1560506840-ec148e82a604?fm=jpg&q=80&w=800&auto=format&fit=crop" alt="Vestido infantil colorido" loading="lazy">
+                        <div>
+                            <h3>Vestido Infantil Colorido</h3>
+                            <p>Cores vivas e tecido leve, perfeito para festas e passeios em família.</p>
+                            <strong>Kz 10.990</strong>
+                            <button type="button" class="btn-cart" data-id="vestido-infantil-colorido" data-name="Vestido Infantil Colorido" data-price="10990" data-img="https://images.unsplash.com/photo-1560506840-ec148e82a604?fm=jpg&q=80&w=800&auto=format&fit=crop">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="https://images.unsplash.com/photo-1632337950445-ba446cb0e26f?fm=jpg&q=80&w=800&auto=format&fit=crop" alt="Calções infantis azuis" loading="lazy">
+                        <div>
+                            <h3>Calções Infantis</h3>
+                            <p>Confortáveis para brincar e ideais para o clima quente angolano.</p>
+                            <strong>Kz 6.990</strong>
+                            <button type="button" class="btn-cart" data-id="calcoes-infantis" data-name="Calções Infantis" data-price="6990" data-img="https://images.unsplash.com/photo-1632337950445-ba446cb0e26f?fm=jpg&q=80&w=800&auto=format&fit=crop">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="https://images.unsplash.com/photo-1622290291720-ac961c43ee30?fm=jpg&q=80&w=800&auto=format&fit=crop" alt="Body para bebé com estampa de urso" loading="lazy">
+                        <div>
+                            <h3>Body Bebé Ursinho</h3>
+                            <p>Tecido macio e respirável, ideal para o dia a dia do bebé.</p>
+                            <strong>Kz 5.990</strong>
+                            <button type="button" class="btn-cart" data-id="body-bebe-ursinho" data-name="Body Bebé Ursinho" data-price="5990" data-img="https://images.unsplash.com/photo-1622290291720-ac961c43ee30?fm=jpg&q=80&w=800&auto=format&fit=crop">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="https://images.unsplash.com/photo-1560859259-fcf2b952aed8?fm=jpg&q=80&w=800&auto=format&fit=crop" alt="Conjunto casual infantil colorido" loading="lazy">
+                        <div>
+                            <h3>Conjunto Casual Infantil</h3>
+                            <p>Peças versáteis e coloridas para montar looks confortáveis no dia a dia.</p>
+                            <strong>Kz 9.990</strong>
+                            <button type="button" class="btn-cart" data-id="conjunto-casual-infantil" data-name="Conjunto Casual Infantil" data-price="9990" data-img="https://images.unsplash.com/photo-1560859259-fcf2b952aed8?fm=jpg&q=80&w=800&auto=format&fit=crop">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>Mussumba Store</h3>
+                <a href="sobre.html">Sobre</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="testemunho.html">Testemunhos</a>
+            </div>
+
+            <div>
+                <h3>Atendimento</h3>
+                <a href="faq.html">FAQ</a>
+                <a href="termos.html">Trocas e devoluções</a>
+                <a href="contactos.html">Contactos</a>
+            </div>
+
+            <div>
+                <h3>Legal</h3>
+                <a href="politicas.html">Política de privacidade</a>
+                <a href="termos.html">Termos e condições</a>
+                <a href="mapa.html">Mapa do site</a>
+            </div>
+
+            <div>
+                <h3>Redes sociais</h3>
+                <a href="https://instagram.com/mussumbastore" target="_blank">Instagram</a>
+                <a href="https://wa.me/244946644091" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+        </div>
+
+        <p class="copyright">
+            © 2026 Mussumba Store Angola. Moda com essência angolana.
+        </p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">&uarr;</button>
+
+    <div class="social-float" aria-label="Redes sociais e contacto rapido">
+        <a href="https://wa.me/244946644091" target="_blank" rel="noopener" class="social-float-btn whatsapp-btn" aria-label="Falar no WhatsApp" title="Falar no WhatsApp">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.2 8.2 0 0 1 2.42 5.82c0 4.55-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.13.82.84-3.05-.2-.32a8.17 8.17 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.25-8.24Z"/></svg>
+        </a>
+        <button class="social-float-btn share-btn" id="shareBtn" aria-label="Partilhar esta pagina" title="Partilhar esta pagina">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18 16.08a2.9 2.9 0 0 0-1.94.75l-7.05-4.11a3 3 0 0 0 0-1.44l7.05-4.11a2.92 2.92 0 1 0-.9-2.09c0 .16.02.32.05.47L8.15 9.66a2.92 2.92 0 1 0 0 4.68l7.06 4.09a3 3 0 1 0 2.79-2.35Z"/></svg>
+        </button>
+    </div>
+
+    <script src="../js/main.js" defer></script>
+
+</body>
+</html>
