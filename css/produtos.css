@@ -1,0 +1,521 @@
+/* =========================================================
+   MUSSUMBA STORE — folha de estilos principal
+   Paleta e identidade mantidas; ajustes de consistência e
+   organização inspirados na estrutura da ZOPO.
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    font-family: inherit;
+}
+
+/* ---------- Barra superior ---------- */
+.top-bar {
+    background: #8b4513;
+    color: #ffffff;
+    text-align: center;
+    padding: 9px 16px;
+    font-size: 13px;
+    letter-spacing: .2px;
+}
+
+/* ---------- Cabeçalho (igual em todas as páginas) ---------- */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    padding: 18px 40px;
+    border-bottom: 1px solid #e7ded7;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #8b4513;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.logo span {
+    display: block;
+    color: #666666;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+.search-bar {
+    display: flex;
+    flex: 1;
+    max-width: 420px;
+    border: 1px solid #e7ded7;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+/* ---------- Botões uniformizados (mesma cor, mesmo tipo de letra) ---------- */
+.search-bar button,
+.btn,
+.btn-cart,
+.newsletter button,
+button[type="submit"] {
+    background: #8b4513;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: background .2s;
+}
+
+.search-bar button:hover,
+.btn:hover,
+.btn-cart:hover,
+.newsletter button:hover,
+button[type="submit"]:hover {
+    background: #4f260b;
+}
+
+.btn-outline {
+    display: inline-block;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.btn-outline:hover {
+    background: #ffffff;
+    color: #8b4513;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+
+.nav-links a,
+.cart-link {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.nav-links a:hover,
+.cart-link:hover {
+    color: #8b4513;
+}
+
+.nav-links a.active {
+    color: #8b4513;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 4px;
+}
+
+.cart-link span {
+    background: #8b4513;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    min-height: 55vh;
+    background: linear-gradient(135deg, #2c1810 0%, #8b4513 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 70px 20px;
+}
+
+.hero.hero-home {
+    min-height: 68vh;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 6vw, 60px);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f1e6dc;
+}
+
+/* ---------- Secções gerais ---------- */
+.section {
+    width: min(1200px, calc(100% - 36px));
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.section h2 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-lead {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 35px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- Categorias (Homem / Mulher / Crianças) ---------- */
+.category-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 45px;
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: #8b4513;
+    border: 1px solid #8b4513;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: .2s;
+}
+
+.category-nav a:hover {
+    background: #8b4513;
+    color: #ffffff;
+}
+
+.category-block {
+    margin-bottom: 70px;
+}
+
+.category-block:last-child {
+    margin-bottom: 0;
+}
+
+.category-block-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-block-header h3 {
+    font-size: 26px;
+    color: #2c1810;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.category-block-header span {
+    color: #8b4513;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ---------- Grelha de produtos ---------- */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 26px;
+}
+
+.product-card {
+    border: 1px solid #e7ded7;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    transition: .2s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(79, 38, 11, .12);
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    background: #faf7f3;
+}
+
+.product-card div {
+    padding: 18px;
+}
+
+.product-card h3 {
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.product-card p {
+    color: #666666;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.product-card strong {
+    display: block;
+    color: #4f260b;
+    margin-bottom: 14px;
+}
+
+.btn-cart {
+    display: block;
+    text-align: center;
+}
+
+/* ---------- Banner / faixa promocional ---------- */
+.banner {
+    background: #faf7f3;
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 1px solid #e7ded7;
+    border-bottom: 1px solid #e7ded7;
+}
+
+.banner h2 {
+    color: #8b4513;
+    margin-bottom: 12px;
+}
+
+.banner p {
+    max-width: 700px;
+    margin: 0 auto 22px;
+    color: #666666;
+}
+
+/* ---------- Newsletter ---------- */
+.newsletter {
+    background: #2c1810;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.newsletter p {
+    margin: 10px 0 22px;
+    color: #d8c9bd;
+}
+
+.newsletter form {
+    display: flex;
+    max-width: 520px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+/* ---------- Formulários (contactos, mensagens) ---------- */
+.form-box {
+    background: #faf7f3;
+    border: 1px solid #e7ded7;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.form-box .field {
+    margin-bottom: 20px;
+}
+
+.form-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2c1810;
+}
+
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 16px 18px;
+    font-size: 16px;
+    border: 1px solid #d8c9bd;
+    border-radius: 8px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.form-box textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+    border-color: #8b4513;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+}
+
+/* ---------- Rodapé (igual em todas as páginas) ---------- */
+footer {
+    background: #1a0f0a;
+    color: #ffffff;
+    padding: 45px 40px 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    width: min(1200px, 100%);
+    margin: 0 auto;
+}
+
+footer h3 {
+    color: #d4a373;
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+footer a {
+    display: block;
+    color: #c7bbb1;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #d4a373;
+}
+
+.copyright {
+    text-align: center;
+    color: #9f9187;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #3a2a20;
+    font-size: 13px;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 900px) {
+    .main-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 16px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-bar {
+        max-width: 100%;
+        order: 3;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: auto;
+        padding: 55px 18px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .form-box {
+        padding: 26px;
+    }
+
+    .category-block-header {
+        justify-content: center;
+        text-align: center;
+    }
+}

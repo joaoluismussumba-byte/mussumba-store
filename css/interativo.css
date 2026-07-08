@@ -1,0 +1,596 @@
+/* =========================================================
+   MUSSUMBA STORE — interativo.css
+   Estilos para os recursos de JavaScript: menu responsivo,
+   modo escuro, botão voltar ao topo, redes sociais flutuantes,
+   carrosséis/sliders, mapa interativo e validação de formulários.
+   Este ficheiro é carregado em todas as páginas, depois da
+   folha de estilos própria de cada página.
+   ========================================================= */
+
+/* ---------- Menu de navegação responsivo ---------- */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #e7ded7;
+    border-radius: 8px;
+    background: #ffffff;
+    cursor: pointer;
+    order: 2;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #2c1810;
+    border-radius: 2px;
+    transition: transform .25s ease, opacity .25s ease;
+}
+
+.nav-toggle.is-open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.is-open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        width: 100%;
+        background: #ffffff;
+        padding: 10px 0 4px;
+    }
+
+    .nav-links.is-open {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+/* ---------- Botão de modo escuro ---------- */
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #e7ded7;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background .2s, transform .2s;
+}
+
+.theme-toggle:hover {
+    background: #faf7f3;
+    transform: scale(1.06);
+}
+
+/* ---------- Botão voltar ao topo ---------- */
+.back-to-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background: #8b4513;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .22);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity .25s ease, transform .25s ease, background .2s;
+    z-index: 40;
+}
+
+.back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: #4f260b;
+}
+
+/* ---------- Redes sociais flutuantes ---------- */
+.social-float {
+    position: fixed;
+    left: 22px;
+    bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 40;
+}
+
+.social-float-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .22);
+    transition: transform .2s;
+}
+
+.social-float-btn:hover {
+    transform: scale(1.08);
+}
+
+.whatsapp-btn {
+    background: #25d366;
+}
+
+.share-btn {
+    background: #8b4513;
+}
+
+/* ---------- Toast de partilha / feedback rápido ---------- */
+.mussumba-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 90px;
+    transform: translate(-50%, 12px);
+    background: #2c1810;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s ease, transform .25s ease;
+    z-index: 60;
+    max-width: 90vw;
+    text-align: center;
+}
+
+.mussumba-toast.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+
+/* ---------- Carrossel / Slider ---------- */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform .45s ease;
+    will-change: transform;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    text-align: center;
+    color: #666666;
+    padding: 14px 10px 0;
+    font-size: 15px;
+}
+
+.carousel .testimonial-card {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel .testimonial-card div {
+    padding: 30px;
+}
+
+.carousel .testimonial-card h3 {
+    color: #8b4513;
+    margin-bottom: 12px;
+}
+
+.carousel .testimonial-card p {
+    font-size: 16px;
+    color: #444444;
+    font-style: italic;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(44, 24, 16, .55);
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s;
+    z-index: 5;
+}
+
+.carousel-btn:hover {
+    background: rgba(139, 69, 19, .9);
+}
+
+.carousel-prev {
+    left: 12px;
+}
+
+.carousel-next {
+    right: 12px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.carousel-dots button {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: none;
+    background: #d8c9bd;
+    cursor: pointer;
+    padding: 0;
+}
+
+.carousel-dots button.is-active {
+    background: #8b4513;
+}
+
+@media (max-width: 600px) {
+    .carousel-slide img {
+        max-height: 280px;
+    }
+
+    .carousel-btn {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* ---------- Mapa interativo ---------- */
+.map-container {
+    width: 100%;
+    height: 420px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e7ded7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #faf7f3;
+}
+
+.map-fallback {
+    color: #666666;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .map-container {
+        height: 300px;
+    }
+}
+
+/* ---------- Validação de formulários ---------- */
+.field.has-error input,
+.field.has-error textarea,
+.search-bar.has-error input,
+.newsletter input.has-error {
+    border-color: #c0392b !important;
+    background: #fdf1ef;
+}
+
+.field-error-msg {
+    display: block;
+    color: #c0392b;
+    font-size: 12.5px;
+    margin-top: 6px;
+    font-weight: 600;
+}
+
+.form-feedback {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+.form-feedback.is-success {
+    color: #1c7c3f;
+}
+
+.form-feedback.is-error {
+    color: #c0392b;
+}
+
+.newsletter .form-feedback {
+    color: #f1e6dc;
+}
+
+.newsletter .form-feedback.is-success {
+    color: #b8f2cf;
+}
+
+.newsletter .form-feedback.is-error {
+    color: #f7c9c1;
+}
+
+/* =========================================================
+   MODO ESCURO
+   Ativado através do atributo data-theme="dark" na tag <html>,
+   controlado pelo botão de alternância em js/main.js.
+   ========================================================= */
+html[data-theme="dark"] body {
+    background: #14100d;
+    color: #ece4dd;
+}
+
+html[data-theme="dark"] .main-header {
+    background: #1c1512;
+    border-bottom-color: #35281f;
+}
+
+html[data-theme="dark"] .logo {
+    color: #d99a6c;
+}
+
+html[data-theme="dark"] .logo span {
+    color: #a99a8f;
+}
+
+html[data-theme="dark"] .search-bar {
+    border-color: #35281f;
+    background: #241a15;
+}
+
+html[data-theme="dark"] .search-bar input {
+    background: #241a15;
+    color: #ece4dd;
+}
+
+html[data-theme="dark"] .nav-links a,
+html[data-theme="dark"] .cart-link {
+    color: #ece4dd;
+}
+
+html[data-theme="dark"] .nav-links a:hover,
+html[data-theme="dark"] .cart-link:hover,
+html[data-theme="dark"] .nav-links a.active {
+    color: #d99a6c;
+    border-color: #d99a6c;
+}
+
+html[data-theme="dark"] .nav-toggle {
+    background: #241a15;
+    border-color: #35281f;
+}
+
+html[data-theme="dark"] .nav-toggle span {
+    background: #ece4dd;
+}
+
+html[data-theme="dark"] .nav-links.is-open {
+    background: #1c1512;
+}
+
+html[data-theme="dark"] .theme-toggle {
+    background: #241a15;
+    border-color: #35281f;
+}
+
+html[data-theme="dark"] .section h2,
+html[data-theme="dark"] .banner h2 {
+    color: #d99a6c;
+}
+
+html[data-theme="dark"] .section-lead,
+html[data-theme="dark"] .banner p,
+html[data-theme="dark"] .product-card p,
+html[data-theme="dark"] .carousel-caption {
+    color: #b9aca3;
+}
+
+html[data-theme="dark"] .product-card {
+    background: #1c1512;
+    border-color: #35281f;
+}
+
+html[data-theme="dark"] .product-card img {
+    background: #241a15;
+}
+
+html[data-theme="dark"] .product-card strong {
+    color: #d99a6c;
+}
+
+html[data-theme="dark"] .category-block-header {
+    border-color: #d99a6c;
+}
+
+html[data-theme="dark"] .category-block-header h3 {
+    color: #ece4dd;
+}
+
+html[data-theme="dark"] .category-nav a {
+    color: #d99a6c;
+    border-color: #d99a6c;
+}
+
+html[data-theme="dark"] .category-nav a:hover {
+    background: #d99a6c;
+    color: #1c1512;
+}
+
+html[data-theme="dark"] .banner {
+    background: #1c1512;
+    border-color: #35281f;
+}
+
+html[data-theme="dark"] .form-box {
+    background: #1c1512;
+    border-color: #35281f;
+}
+
+html[data-theme="dark"] .form-box label {
+    color: #ece4dd;
+}
+
+html[data-theme="dark"] .form-box input,
+html[data-theme="dark"] .form-box textarea {
+    background: #241a15;
+    color: #ece4dd;
+    border-color: #35281f;
+}
+
+html[data-theme="dark"] footer {
+    background: #0d0906;
+}
+
+html[data-theme="dark"] .map-container {
+    background: #1c1512;
+    border-color: #35281f;
+}
+
+html[data-theme="dark"] .map-fallback {
+    color: #b9aca3;
+}
+
+/* ---------- Carrinho de compras ---------- */
+.cart-qty-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.cart-qty-row button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #8b4513;
+    background: #ffffff;
+    color: #8b4513;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 1;
+    transition: .2s;
+}
+
+.cart-qty-row button:hover {
+    background: #8b4513;
+    color: #ffffff;
+}
+
+.cart-qty-row span {
+    min-width: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cart-remove-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    color: #a83232;
+    border: 1px solid #a83232;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cart-remove-btn:hover {
+    background: #a83232;
+    color: #ffffff;
+}
+
+.cart-empty {
+    text-align: center;
+    color: #666666;
+    padding: 30px 20px 50px;
+}
+
+.cart-empty p {
+    margin-bottom: 14px;
+}
+
+html[data-theme="dark"] .cart-qty-row button {
+    background: #1c1512;
+}
+
+html[data-theme="dark"] .cart-empty {
+    color: #b9aca3;
+}
+
+/* ---------- Filtro de categorias (produtos.html) ---------- */
+.category-nav a.active {
+    background: #8b4513;
+    color: #ffffff;
+}
